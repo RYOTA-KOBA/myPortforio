@@ -69,7 +69,7 @@ li {
   padding-top: 50px !important;
 }
 
-.content-width, .header__inner, .profile__inner {
+.content-width, .header__inner, .profile__inner, .skills__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -115,6 +115,11 @@ li {
   margin: 0 auto;
 }
 
+.header__inner .header__logo a {
+  text-decoration: none;
+  color: #333333;
+}
+
 .header__inner .header__nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,9 +134,14 @@ li {
   margin-left: 20px;
 }
 
-.header__inner .header__nav > ul > li a:hover,
 .header__inner .header__nav > ul > li a {
   text-decoration: none;
+  color: #333333;
+}
+
+.header__inner .header__nav > ul > li a:hover {
+  text-decoration: none;
+  color: #a1a1a1;
 }
 
 #content {
@@ -146,6 +156,67 @@ li {
   padding-top: 100px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+
+#content .hero__footer {
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+}
+
+#content .hero__footer span {
+  opacity: 0.5;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 1.1em;
+}
+
+#content .hero__footer .hero__downarrow {
+  width: 80%;
+  -webkit-animation-name: kf-arrow-anime;
+          animation-name: kf-arrow-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  30% {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .profile__inner {
@@ -158,7 +229,7 @@ li {
 }
 
 .profile__inner .profile__left {
-  width: 45%;
+  width: 40%;
 }
 
 .profile__inner .profile__left ul {
@@ -198,6 +269,7 @@ li {
 .profile__inner .profile__right table {
   border-spacing: 0;
   width: 100%;
+  margin-top: 30px;
 }
 
 .profile__inner .profile__right table tbody tr {
@@ -221,5 +293,56 @@ li {
   color: #5a5a5a;
   font-family: 'noto-sans';
   line-height: 1.7;
+  margin-top: 30px;
+}
+
+#skills {
+  background-color: lightgray;
+}
+
+.skills__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__inner .skills__item {
+  padding-top: 20px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.skills__inner .skills__item i {
+  font-size: 2.5em;
+}
+
+.skills__inner .skills__item i.fa-file-code {
+  color: gray;
+}
+
+.skills__inner .skills__item i.fa-sass {
+  color: #CD6799;
+}
+
+.skills__inner .skills__item i.fa-js {
+  color: #323330;
+}
+
+.skills__inner .skills__item i.fa-react {
+  color: #61DBFB;
+}
+
+.skills__inner .skills__item i.fa-wordpress {
+  color: #00749C;
+}
+
+.skills__inner .skills__item i.fa-php {
+  color: #474A8A;
+}
+
+.skills__inner .skills__item h3 {
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=style.css.map */

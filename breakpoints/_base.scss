@@ -84,6 +84,11 @@ li {
         width: 90%;
         margin: 0 auto;
 
+        & .header__logo a{
+          text-decoration: none;
+          color: #333333;
+        }
+
         & .header__nav {
             & > ul {
                 display: flex;
@@ -93,9 +98,13 @@ li {
                 & > li {
                     margin-left: 20px;
 
-                    & a:hover,
                     & a {
                       text-decoration: none;
+                      color: #333333;
+                      &:hover {
+                        text-decoration: none;
+                        color: #a1a1a1;
+                      }
                     }
                 }
             }
@@ -114,7 +123,44 @@ li {
         padding-top: 100px;
         margin: 0 auto;
         text-align: center;
+        position: relative;
+
+
+        &__footer {
+          position: absolute;
+          left: 50%;
+          bottom: 25%;
+          // transform: rotate(90deg);
+          & span {
+            opacity: 0.5;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            transform: rotate(90deg);
+            font-size: 1.1em;
+          }
+          & .hero__downarrow {
+            width: 80%;
+            animation-name: kf-arrow-anime;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+          }
+        }
     }
+}
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    transform: translateY(-10%);
+  }
+  30% {
+    transform: none;
+  }
 }
 
 .profile__inner {
@@ -123,7 +169,7 @@ li {
   @extend .content-width;
 
   & .profile__left {
-    width: 45%;
+    width: 40%;
 
     & ul {
       display: flex;
@@ -157,6 +203,7 @@ li {
     & table {
       border-spacing: 0;
       width: 100%;
+      margin-top: 30px;
     }
     
     & table tbody tr {
@@ -180,7 +227,46 @@ li {
       color: #5a5a5a;
       font-family: 'noto-sans';
       line-height: 1.7;
+      margin-top: 30px;
     }
   }
 }
 
+#skills {
+  background-color: lightgray;
+}
+.skills__inner {
+  display: flex;
+  flex-wrap: wrap;
+  @extend .content-width;
+
+  & .skills__item {
+    padding-top: 20px;
+    width: 33.33%;
+    text-align: center;
+    & i {
+      font-size: 2.5em;
+      &.fa-file-code {
+        color: gray;
+      }
+      &.fa-sass {
+        color: #CD6799;
+      }
+      &.fa-js {
+        color: #323330;
+      }
+      &.fa-react {
+        color: #61DBFB;
+      }
+      &.fa-wordpress {
+        color: #00749C;
+      }
+      &.fa-php {
+        color: #474A8A;
+      }
+    }
+    & h3 {
+      font-size: 1.2em;
+    }
+  }
+}
