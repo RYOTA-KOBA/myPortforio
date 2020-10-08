@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小林 亮太 | ポートフォリオ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" /> -->
@@ -12,18 +13,18 @@
 <body>
     <div id="global-container">
         <div class="container">
-            <header class="header">
+            <header class="header" data-scroll-header>
                 <div class="header__inner">
                     <div class="header__logo">
                         <span class="font-lg"><a href="">RYOTA KOBAYASHI</a></span>
                     </div>
                     <nav class="header__nav">
                         <ul class="header__ul">
-                            <li class="header__li"><a href="#profile">プロフィール</a></li>
-                            <li class="header__li"><a href="#skills">スキル</a></li>
-                            <li class="header__li"><a href="#works">実績</a></li>
-                            <li class="header__li"><a href="#blog">ブログ</a></li>
-                            <li class="header__li"><a href="#contact">お問い合わせ</a></li>
+                            <li class="header__li"><a href="#profile" data-scroll>プロフィール</a></li>
+                            <li class="header__li"><a href="#skills" data-scroll>スキル</a></li>
+                            <li class="header__li"><a href="#works" data-scroll>実績</a></li>
+                            <li class="header__li"><a href="#blog" data-scroll>ブログ</a></li>
+                            <li class="header__li"><a href="#contact" data-scroll>お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -186,16 +187,16 @@
                         <h2 class="txt-cent pt-lg mb-lg">お問い合わせ</h2>
                         <div class="contact__inner pb-lg">
                             <div class="contact__form">
-                                <form action="">
+                                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdot9eHWUAxjp_Lq4UrW1dSaQavD2pEQsWLcpZQUkZ5qw15Fw/formResponse">
                                     <div class="form__inner">
                                         <label class="label" for="company-name">会社名</label><br>
-                                        <input class="form__box" type="text" id="company-name"><br>
+                                        <input name="entry.1422474115" class="form__box" type="text" id="company-name"><br>
                                         <label for="name">名前<span>※必須</span></label><br>
-                                        <input class="form__box" type="text" id="name"><br>
+                                        <input name="entry.696046174" class="form__box" type="text" id="name"><br>
                                         <label for="email">メールアドレス<span>※必須</span></label><br>
-                                        <input class="form__box" type="text" id="email"><br>
+                                        <input name="entry.592690240" class="form__box" type="text" id="email"><br>
                                         <label for="form-content">お問い合わせ内容<span>※必須</span></label><br>
-                                        <textarea class="form__box last__box" name="" id="form-content" cols="30" rows="2"></textarea><br>
+                                        <textarea name="entry.1355850152" class="form__box last__box" id="form-content" cols="30" rows="2"></textarea><br>
                                         <input class="submit__btn" type="submit" placeholder="送信する">
                                     </div>
                                 </form>
