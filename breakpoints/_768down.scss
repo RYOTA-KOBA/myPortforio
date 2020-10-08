@@ -1,0 +1,34 @@
+.mobile-menu__cover {
+    visibility: hidden;
+}
+header {
+    position: relative;
+
+    & nav {
+        position: absolute;
+        top: 0;
+        right: -40%;
+        width: 40%;
+        height: 100vh;
+        background-color: #d1e3ff;
+        transition: .7s;
+
+        & ul {
+            margin-top: 95px;
+            display: block !important;
+            text-align: center;
+
+            & li {
+                font-size: 1.4em;
+                width: 100%;
+                margin-bottom: 15px;
+                margin-left: 0 !important;
+            }
+        }
+    }
+    & .mobile-menu__btn{
+        display: block;
+        z-index: 2;
+    }
+}
+

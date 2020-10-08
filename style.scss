@@ -1,5 +1,13 @@
 @import "breakpoints/base";
+@import 'modules/mobile-menu';
 
+@media (max-width: 479px) {
+  @import 'breakpoints/mobile.scss';
+}
+
+@media (max-width: 768px) {
+  @import 'breakpoints/768down';
+}
 @media (min-width: 480px) {
   @import "breakpoints/480up";
 }
