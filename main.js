@@ -18,9 +18,3 @@ function overRay() {
 document.querySelector('.mobile-menu__cover').addEventListener('click' , function () {
     overRay();
 } );
-
-// const menuOpen = document.querySelectorAll('.mobile-menu__btn, .mobile-menu__cover');
-
-// menuOpen.forEach(function() {
-//     hamburger();
-// });

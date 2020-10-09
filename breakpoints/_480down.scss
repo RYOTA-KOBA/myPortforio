@@ -1,0 +1,29 @@
+#content .hero__footer {
+    left: 46%;
+}
+.profile__inner {
+    flex-wrap: wrap;
+
+    & .profile__left {
+        width: 90%;
+        margin: 0 auto;
+    }
+    & .profile__right {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+#works .works__inner .works__item  {
+    width: 45%;
+}
+
+.contact__inner .contact__form form {
+    width: 90%;
+    & .form__inner {
+        width: 80%;
+        & .form__box {
+            height: 35px;
+        }
+    }
+}

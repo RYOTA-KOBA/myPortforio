@@ -97,7 +97,7 @@ li {
                 
                 & > li {
                     margin-left: 20px;
-                  
+
                     & a {
                       text-decoration: none;
                       color: #333333;
@@ -220,6 +220,12 @@ li {
       & td {
         padding: 10px;
         border-top: 1px solid #b1b1b1;
+        &.first__td {
+          width: 10%;
+        }
+        &.second__td {
+          width: 90%;
+        }
         &.last-td {
           border-bottom: 1px solid #b1b1b1;
         }

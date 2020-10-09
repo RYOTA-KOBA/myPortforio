@@ -33,3 +33,24 @@ header {
     }
 }
 
+.profile__inner {
+
+    & .profile__right {
+        & table {
+            & tbody {
+                & tr {
+                    font-size: 14px;
+                    & td.first__td {
+                        width: 20%;
+                    }
+                    & td.second__td {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        & p {
+            font-size: 14px;
+        }
+    }
+}
