@@ -66,6 +66,7 @@ li {
 }
 
 .header {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
     position: fixed;
     top: 0;
     left: 0;
@@ -338,6 +339,7 @@ li {
 .contact__inner {
   @extend .content-width;
   display: flex;
+  
 
   & .contact__form {
     width: 100%;
@@ -346,6 +348,7 @@ li {
       width: 70%;
       background-color: white;
       margin: 0 auto;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
       & .form__inner {
         width: 70%;
@@ -373,6 +376,7 @@ li {
           margin-bottom: 20px;
           border-radius: 3px;
           font-size: 100%;
+          background-color: #fafafa;
         }
         & .last__box{
           height: 75px !important;
@@ -389,6 +393,7 @@ li {
           text-align: center;
           font-weight: bold;
           font-size: 1.2em;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
         }
       }
     }
